@@ -1,0 +1,35 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "MBL_CellSegmentation"
+description = "Package for 3D cell segmentation"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+keywords = []
+license = { text = "BSD 3-Clause License" }
+authors = [
+    { email = "yourname@gmail.com ", name = "Voxel Vixens " },
+]
+dynamic = ["version"]
+dependencies = [
+    "zarr",
+    "matplotlib",
+    "mahotas",
+    "scikit-learn",
+    "git+https://github.com/funkelab/funlib.math.git",
+    "git+https://github.com/funkelab/funlib.geometry.git",
+    "git+https://github.com/funkelab/funlib.persistence.git",
+    "git+https://github.com/funkelab/funlib.show.neuroglancer.git",
+    "git+https://github.com/funkelab/gunpowder.git",
+    "git+https://github.com/funkelab/funlib.learn.torch.git",
+    "git+https://github.com/funkelab/funlib.segment.git",
+    "git+https://github.com/funkelab/funlib.evaluate.git",
+    "neuroglancer",
+    "tensorboard",
+    "tensorboardx"
+]
